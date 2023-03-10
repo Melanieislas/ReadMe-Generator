@@ -15,6 +15,9 @@ To install and run this application, you have to first install the inquirer pack
 
 The following screenshots are examples of a README file generated using the inquirer package and user input from the terminal.
 
+This is the link to the functional application. 
+file:///Users/melanieislas/Downloads/Readme%20Generator.webm
+
 ![README1](https://user-images.githubusercontent.com/120453099/224250549-662eb026-6509-4087-ad8f-762b2308038d.png)
 
 ![README2](https://user-images.githubusercontent.com/120453099/224250667-c8f17cd8-426b-4bc9-a291-661c1dd2558a.png)
