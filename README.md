@@ -13,24 +13,16 @@ To install and run this application, you have to first install the inquirer pack
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The following screenshots are examples of a README file generated using the inquirer package and user input from the terminal.
 
 ![README1](https://user-images.githubusercontent.com/120453099/224250549-662eb026-6509-4087-ad8f-762b2308038d.png)
 
+![README2](https://user-images.githubusercontent.com/120453099/224250667-c8f17cd8-426b-4bc9-a291-661c1dd2558a.png)
+
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+In this application, I used the MIT Licence
 
----
+## Features
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-
-## Questions
+Some features from this application is the license badge. A badge will show up at the top of the readme file to demonstrate the license chosen by the user.
