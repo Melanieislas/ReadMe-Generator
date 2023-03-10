@@ -71,21 +71,47 @@ inquirer
         name: 'Tests',
         message: "Go the extra mile and write tests for your application. Then provide examples on how to run them here.",
     },
+    {
+    type: 'input',
+        name: 'Github',
+        message: "Enter your Github username",
+    },
+    {
+    type: 'input',
+        name: 'Email',
+        message: "Enter your email",
+    },
   ])
   .then((data) => {
-    const writeToFile = `# ${data.title}\n` 
+
+    if(data.License === 'MIT License' ) {
+        var icon = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    }
+    else if (data.License === 'Mozilla Public License 2.0') {
+        var icon = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)';
+    }
+    else if (data.License === 'ISC License (ISC)') {
+        var icon = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
+    }
+    else if (data.License === 'IBM Public License Version 1.0') {
+        var icon = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)';
+    }
+
+    const writeToFile = `# ${icon} ${data.title}\n` 
         + `\n## Description\n\n- ${data.Descriptive0}\n- ${data.Descriptive1}\n- ${data.Descriptive2}\n- ${data.Descriptive3}\n`
         + `\n## Table of Contents\n\n${data.Contents} \n\n 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)\n`
+- [Tests](#tests)
+- [Questions](#questions)\n`
         + `\n## Installation\n\n${data.Installation}\n`
         + `\n## Usage\n\n${data.Usage}\n`
         + `\n## License\n\nThis application is covered by the ${data.License} license.\n`
         + `\n## Contributing\n\n${data.Contribute}\n`
-        + `\n## Tests\n\n${data.Test}\n`;
+        + `\n## Tests\n\n${data.Test}\n`
+        + `\n## Questions\n\nAny additonal questions? Reach me at\n\n- ${data.Github}\n- ${data.Email}`;
     
     const filename = `README.md`;
         fs.writeFile(filename, writeToFile, (err) => {
