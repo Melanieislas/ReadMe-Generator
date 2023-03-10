@@ -50,18 +50,30 @@ inquirer
         name: 'Installation',
         message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
     },
+    {
+    type: 'input',
+        name: 'Usage',
+        message: "Provide instructions and examples for use. Include screenshots as needed.",
+    },
+    {
+    type: 'list',
+      message: 'What license would you like to use?',
+      name: 'License',
+      choices: ['MIT License', 'Mozilla Public License 2.0', 'ISC License (ISC)', 'IBM Public License Version 1.0'],
+    },
   ])
   .then((data) => {
     const writeToFile = `# ${data.title}\n` 
-        + `\n## Description\n \n - ${data.Descriptive0}\n - ${data.Descriptive1}\n - ${data.Descriptive2}\n - ${data.Descriptive3}\n`
-        + `\n## Table of Contents\n\n ${data.Contents} \n\n 
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [Credits](#credits)
-        - [License](#license)\n`
-        + `\n## Installation\n\n ${data.Installation}\n`;
+        + `\n## Description\n\n- ${data.Descriptive0}\n- ${data.Descriptive1}\n- ${data.Descriptive2}\n- ${data.Descriptive3}\n`
+        + `\n## Table of Contents\n\n${data.Contents} \n\n 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)\n`
+        + `\n## Installation\n\n${data.Installation}\n`
+        + `\n## Usage\n\n${data.Usage}\n`
+        + `\n## License\n\nThis application is covered by the ${data.License} license.\n`;
     
-    console.log(data.title);
     const filename = `README.md`;
         fs.writeFile(filename, writeToFile, (err) => {
             if (err)
@@ -69,21 +81,3 @@ inquirer
         });
     
   });
-
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
-
-
-// TODO: Create a function to initialize app
-function init() {
-    //const READMe =  generateMarkdown();
-    /*
-    const fileName = 'README.md';
-    
-    fs.writeFile(fileName, READMe, (err) => {
-        err ? console.log(err) : console.log(`Successfully created ${fileName}`);
-    })*/
-}
-
-// Function call to initialize app
-init();
