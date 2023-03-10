@@ -15,11 +15,7 @@ To install and run this application, you have to first install the inquirer pack
 
 Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![README1](https://user-images.githubusercontent.com/120453099/224250549-662eb026-6509-4087-ad8f-762b2308038d.png)
 
 ## License
 
