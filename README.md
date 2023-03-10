@@ -1,26 +1,15 @@
-# <Your-Project-Title>
+# ReadMe Generator
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+- My motivation for this project is to create an interactive application which allows the user to enter data and be formatted into a readme file
+- I built this project because it will help me generate future Readme acting as a future template
+- This application saves time in researching the components of a Readme and allows me to answer simple questions and makes a clean simple readme with less effort 
+- I learned how to write to a file and use inquirer packages to write and output code
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To install and run this application, you have to first install the inquirer package in the JSON foler and also run node index.js to get the application to run and generate a README.
 
 ## Usage
 
