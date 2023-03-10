@@ -17,7 +17,7 @@ The following screenshots are examples of a README file generated using the inqu
 
 This is the link to the functional application.
 
-chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/6b4f71e0-5fc6-4890-y462-9c9c2646e88c
+(https://drive.google.com/file/d/1TGETVDekcwL99hYbKu4TnXHgZC1aUmD6/view)
 
 ![README1](https://user-images.githubusercontent.com/120453099/224250549-662eb026-6509-4087-ad8f-762b2308038d.png)
 
