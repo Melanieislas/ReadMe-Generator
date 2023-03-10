@@ -17,7 +17,7 @@ The following screenshots are examples of a README file generated using the inqu
 
 This is the link to the functional application.
 
-file:///Users/melanieislas/Downloads/Readme%20Generator%20(1).webm
+file:///Users/melanieislas/Downloads/Untitled_%20Mar%209,%202023%2011_55%20PM%20(1).webm
 
 ![README1](https://user-images.githubusercontent.com/120453099/224250549-662eb026-6509-4087-ad8f-762b2308038d.png)
 
