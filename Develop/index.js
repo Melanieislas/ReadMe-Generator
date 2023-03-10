@@ -61,6 +61,16 @@ inquirer
       name: 'License',
       choices: ['MIT License', 'Mozilla Public License 2.0', 'ISC License (ISC)', 'IBM Public License Version 1.0'],
     },
+    {
+    type: 'input',
+        name: 'Contribute',
+        message: "If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so.",
+    },
+    {
+    type: 'input',
+        name: 'Tests',
+        message: "Go the extra mile and write tests for your application. Then provide examples on how to run them here.",
+    },
   ])
   .then((data) => {
     const writeToFile = `# ${data.title}\n` 
@@ -68,11 +78,14 @@ inquirer
         + `\n## Table of Contents\n\n${data.Contents} \n\n 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)\n`
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)\n`
         + `\n## Installation\n\n${data.Installation}\n`
         + `\n## Usage\n\n${data.Usage}\n`
-        + `\n## License\n\nThis application is covered by the ${data.License} license.\n`;
+        + `\n## License\n\nThis application is covered by the ${data.License} license.\n`
+        + `\n## Contributing\n\n${data.Contribute}\n`
+        + `\n## Tests\n\n${data.Test}\n`;
     
     const filename = `README.md`;
         fs.writeFile(filename, writeToFile, (err) => {

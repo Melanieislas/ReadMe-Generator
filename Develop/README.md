@@ -14,8 +14,8 @@ f
  
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
+- [Contributing](#contributing)
 
 ## Installation
 
@@ -28,3 +28,7 @@ f
 ## License
 
 This application is covered by the MIT License license.
+
+## Contributing
+
+ff
